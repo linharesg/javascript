@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(214, 184, 101);
+            color: rgb(31, 131, 189);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em <em>Javascript</em>.</p>
+    <div id="msg">Est texto ainda vai ser substituído e nem vai aparecer</div>
+    <div class="teste">Texto para testar o queryselector por class(é o com letra verde)</div>
+    <div id="teste">Texto para testar o queryselector por ID</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(`No segundo parágrafo está escrito: ${p1.innerText}<br>`) //vem só o texto
+        window.document.write(`No segundo parágrafo está escrito: ${p1.innerHTML}<br>`) //vem com a formatação
+        p1.style.color = 'purple'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        // d.innerText = 'texto novo comentado'
+        window.document.getElementById('msg').innerText = 'texto novo para testar o getElementById'
+
+        var t = window.document.querySelector('div.teste')
+        t.style.color = 'green'
+        window.document.querySelector('div#teste').style.color = 'white'    
+    </script>
+</body>
+</html>
