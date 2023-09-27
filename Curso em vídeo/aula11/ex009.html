@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Consulte sua nacionalidade</h1>
+    <input type="text" id="txnaci" placeholder="Digite aqui seu país de nascimento" style="width: 300px;">
+    <input type="button" value="Buscar" onclick="consultar()">
+    <div id="res">Aguardando entrada de dados...</div>
+    <script>
+        function consultar() {
+            var naci = window.document.getElementById('txnaci')
+            var nacionalidade = naci.value
+            var res = window.document.querySelector('div#res')
+            if (nacionalidade == 'Brasil') {
+                res.innerHTML = 'Vocês é brasileiro'
+            } else {
+                res.innerHTML = 'Você é estrangeiro'
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
