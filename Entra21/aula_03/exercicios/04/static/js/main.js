@@ -81,6 +81,7 @@ const resetTimer = () => {
     clearInterval(clockTimer)
     justStarted = true
     isPaused = true
+    $pause_resumeButton.text("PAUSE")
  }
 
 $startButton.click(startTimer)
