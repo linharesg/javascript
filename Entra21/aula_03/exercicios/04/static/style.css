@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+}
+
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.wraper {
+    border: 1px solid black;
+    justify-content: center;
+    display: flexbox;
+    width: 60%;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+li {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid black;
+    user-select: none;
+    cursor: pointer;
+}
