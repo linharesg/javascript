@@ -1,3 +1,5 @@
+$("document").ready(() => {
+
 const $decreaser = $(".decreaser")
 const $increaser = $(".increaser")
 let $counter = $(".counter")
@@ -16,3 +18,4 @@ increaserCounter = () => {
 $decreaser.click(decreaserCounter)
 $increaser.click(increaserCounter)
 
+})
